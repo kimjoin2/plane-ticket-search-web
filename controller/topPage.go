@@ -25,7 +25,9 @@ func TopPageController(w http.ResponseWriter, r *http.Request) {
 		html += viewFactory.GetTableRow(rowData, i)
 	}
 	html += viewFactory.GetTableFooter()
-	i, err := fmt.Fprintln(w, html)
-	log.Println(i, err)
+	_, err = fmt.Fprintln(w, html)
+	if err != nil {
+		log.Println(err)
+	}
 }
 
