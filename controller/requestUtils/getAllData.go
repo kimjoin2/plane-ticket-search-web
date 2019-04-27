@@ -4,7 +4,7 @@ import (
 	"encoding/json"
 	"io/ioutil"
 	"net/http"
-	"simpleWebServer/dto"
+	"plane-ticket-search-web/dto"
 )
 
 func GetAllTicketData() ([]dto.TicketPriceDTO, error) {

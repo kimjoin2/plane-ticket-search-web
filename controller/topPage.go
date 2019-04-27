@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"log"
 	"net/http"
-	"simpleWebServer/controller/requestUtils"
-	"simpleWebServer/controller/viewFactory"
+	"plane-ticket-search-web/controller/requestUtils"
+	"plane-ticket-search-web/controller/viewFactory"
 )
 
 func TopPageController(w http.ResponseWriter, r *http.Request) {

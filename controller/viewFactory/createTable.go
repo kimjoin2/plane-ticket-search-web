@@ -1,7 +1,7 @@
 package viewFactory
 
 import (
-	"simpleWebServer/dto"
+	"plane-ticket-search-web/dto"
 	"strconv"
 )
 

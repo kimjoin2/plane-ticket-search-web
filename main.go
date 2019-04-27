@@ -3,8 +3,8 @@ package main
 import (
 	"log"
 	"net/http"
-	"simpleWebServer/controller"
-	"simpleWebServer/webServerConfig"
+	"plane-ticket-search-web/controller"
+	"plane-ticket-search-web/webServerConfig"
 )
 
 func main() {

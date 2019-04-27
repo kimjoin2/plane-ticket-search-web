@@ -1,7 +1,7 @@
 package requestUtils
 
 func getCrudServiceAddress() string {
-	const address = "http://127.0.0.1:9001"
+	const address = "http://curl:9001"
 	return address
 }
 
