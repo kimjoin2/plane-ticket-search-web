@@ -13,6 +13,7 @@ func TopPageController(w http.ResponseWriter, r *http.Request) {
 
 	allTicketData, err := requestUtils.GetAllTicketData()
 	if err != nil {
+		log.Println(err)
 		w.WriteHeader(http.StatusInternalServerError)
 		return
 	}
@@ -28,6 +29,7 @@ func TopPageController(w http.ResponseWriter, r *http.Request) {
 	_, err = fmt.Fprintln(w, html)
 	if err != nil {
 		log.Println(err)
+		w.WriteHeader(http.StatusInternalServerError)
 	}
 }
 
